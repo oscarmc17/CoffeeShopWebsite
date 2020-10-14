@@ -8,7 +8,7 @@
 $ham-breakpoint: 767px;
 $first-breakpoint: 870px;
 $chocolate-color: chocolate;
-$iphone-breakpoint: 430px;
+$iphone-breakpoint: 450px;
 
 // Hamburger Menu Section
 .ham-container {
@@ -348,10 +348,10 @@ $iphone-breakpoint: 430px;
     }
 
     .shapes {
-        height: 180vh;
+        height: 160vh;
 
         .shapes-container {
-            height: 180vh;
+            height: 150vh;
         }
     }
 }
@@ -410,10 +410,10 @@ $iphone-breakpoint: 430px;
 
 @media (max-width: $ham-breakpoint){
     .split {
-        height: 155vh;
+        height: 145vh;
         
         .white-background {
-            height: 145vh;
+            height: 140vh;
         }
     }
     .hello {
