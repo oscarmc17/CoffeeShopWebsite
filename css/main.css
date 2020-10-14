@@ -367,10 +367,10 @@
     margin-bottom: 75px;
   }
   .shapes {
-    height: 175vh;
+    height: 155vh;
   }
   .shapes .shapes-container {
-    height: 170vh;
+    height: 155vh;
   }
 }
 
@@ -488,5 +488,11 @@
   background: #be5e1a;
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 450px) {
+  .news {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

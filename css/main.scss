@@ -348,10 +348,10 @@ $iphone-breakpoint: 450px;
     }
 
     .shapes {
-        height: 175vh;
+        height: 155vh;
 
         .shapes-container {
-            height: 170vh;
+            height: 155vh;
         }
     }
 }
@@ -453,5 +453,11 @@ $iphone-breakpoint: 450px;
             text-decoration: none;
             color: white;
         }
+    }
+}
+
+@media (max-width: $iphone-breakpoint){
+    .news {
+        font-size: 15px;
     }
 }
