@@ -374,6 +374,18 @@
   }
 }
 
+@media (max-width: 450px) {
+  .shop-tittle {
+    margin-bottom: 75px;
+  }
+  .shapes {
+    height: 180vh;
+  }
+  .shapes .shapes-container {
+    height: 180vh;
+  }
+}
+
 .split {
   background: url("../Images/dots.png");
   height: 80vh;
@@ -452,6 +464,15 @@
   .hello {
     position: absolute;
     top: 21vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .split {
+    height: 160vh;
+  }
+  .split .white-background {
+    height: 150vh;
   }
 }
 

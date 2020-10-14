@@ -356,6 +356,20 @@ $iphone-breakpoint: 450px;
     }
 }
 
+@media (max-width: $iphone-breakpoint) {
+    .shop-tittle {
+        margin-bottom: 75px;
+    }
+
+    .shapes {
+        height: 180vh;
+
+        .shapes-container {
+            height: 180vh;
+        }
+    }
+}
+
 .split {
     background: url("../Images/dots.png");
     height: 80vh;
@@ -419,6 +433,16 @@ $iphone-breakpoint: 450px;
     .hello {
         position: absolute;
         top: 21vh;
+    }
+}
+
+@media (max-width: $iphone-breakpoint) {
+    .split {
+        height: 160vh;
+        
+        .white-background {
+            height: 150vh;
+        }
     }
 }
 
