@@ -9,6 +9,7 @@ $ham-breakpoint: 767px;
 $first-breakpoint: 870px;
 $chocolate-color: chocolate;
 $iphone-breakpoint: 450px;
+$sm-iphone-bp: 380px;
 
 // Hamburger Menu Section
 .ham-container {
@@ -362,6 +363,16 @@ $iphone-breakpoint: 450px;
     }
 
     .shapes {
+        height: 180vh;
+
+        .shapes-container {
+            height: 180vh;
+        }
+    }
+}
+
+@media (max-width: $sm-iphone-bp) {
+    .shapes {
         height: 200vh;
 
         .shapes-container {
@@ -418,6 +429,7 @@ $iphone-breakpoint: 450px;
         .split-img {
             height: 75vh;
             width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -483,5 +495,51 @@ $iphone-breakpoint: 450px;
 @media (max-width: $iphone-breakpoint){
     .news {
         font-size: 12px;
+    }
+}
+
+
+@media (max-width: 767px) and (orientation: landscape){
+    .example {
+        height: 25vh;
+    }
+
+    .landing{
+        height: 120vh;
+    }
+
+    .shapes {
+        height: 130vh;
+    }
+
+    .split {
+        position: relative;
+        top: 700px;
+
+        .split-container {
+            height: 100vh;
+
+            .covid-title{
+                margin-top: 50px;
+            }
+        }
+
+        .white-background .split-img {
+            height: 100vh;
+        }
+    }
+
+    .form-section{
+        position: relative;
+        top: 925px;
+        height: 60vh;
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 670px) and (orientation: landscape){
+    .example {
+        height: 30vh;
     }
 }

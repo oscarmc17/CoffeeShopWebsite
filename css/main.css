@@ -379,6 +379,15 @@
     margin-bottom: 75px;
   }
   .shapes {
+    height: 180vh;
+  }
+  .shapes .shapes-container {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .shapes {
     height: 200vh;
   }
   .shapes .shapes-container {
@@ -452,6 +461,8 @@
 .split .white-background .split-img {
   height: 75vh;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -514,6 +525,43 @@
 @media (max-width: 450px) {
   .news {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .example {
+    height: 25vh;
+  }
+  .landing {
+    height: 120vh;
+  }
+  .shapes {
+    height: 130vh;
+  }
+  .split {
+    position: relative;
+    top: 700px;
+  }
+  .split .split-container {
+    height: 100vh;
+  }
+  .split .split-container .covid-title {
+    margin-top: 50px;
+  }
+  .split .white-background .split-img {
+    height: 100vh;
+  }
+  .form-section {
+    position: relative;
+    top: 925px;
+    height: 60vh;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 670px) and (orientation: landscape) {
+  .example {
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
