@@ -9,12 +9,12 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 812px) {
   .example {
     width: 100%;
     height: 15vh;
     background-image: url("../Images/attachment_118172475.png");
-    background-size: 475px 275px;
+    background-size: 500px 200px;
     background-position: center;
   }
   .example .ham-container {
@@ -144,7 +144,7 @@
 
 .page-header-container {
   background: #262626;
-  height: 10vh;
+  max-height: 10vh;
   width: 100%;
 }
 
@@ -154,6 +154,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-wrapper {
@@ -287,8 +289,6 @@
 }
 
 .shapes {
-  height: 80vh;
-  background: url("../Images/dots.png");
   background-size: repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,15 +299,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .shapes .shapes-container {
-  background: white;
-  height: 75vh;
+  background: #f8f8f8;
+  width: 100%;
 }
 
 .shapes .shapes-container .shop-tittle {
-  margin-top: 25px;
+  margin: 25px 0px 50px 0px;
   text-transform: uppercase;
   font-size: 36px;
 }
@@ -326,26 +328,31 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
   margin-top: -25px;
-  display: flex;
+  overflow: hidden;
 }
 
 .shapes .shapes-container .shapes-center .circle1 {
   height: 275px;
   width: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
 .shapes .shapes-container .shapes-center .circle2 {
   height: 275px;
   width: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
 .shapes .shapes-container .shapes-center .circle3 {
   height: 275px;
   width: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
@@ -362,15 +369,9 @@
   font-size: 18px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 812px) {
   .shop-tittle {
     margin-bottom: 75px;
-  }
-  .shapes {
-    height: 160vh;
-  }
-  .shapes .shapes-container {
-    height: 150vh;
   }
 }
 
@@ -378,40 +379,10 @@
   .shop-tittle {
     margin-bottom: 75px;
   }
-  .shapes {
-    height: 200vh;
-  }
-  .shapes .shapes-container {
-    height: 200vh;
-  }
 }
 
-@media (max-width: 380px) {
-  .shapes {
-    height: 200vh;
-  }
-  .shapes .shapes-container {
-    height: 200vh;
-  }
-}
-
-.split {
-  background: url("../Images/dots.png");
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.split .white-background {
-  background: white;
-  height: 75vh;
+.white-background {
+  background: #fdfdfd;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,7 +395,7 @@
           align-items: center;
 }
 
-.split .white-background .split-container {
+.white-background .split-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,17 +404,15 @@
           align-items: center;
 }
 
-.split .white-background .split-container .covid-title {
-  position: relative;
-  top: -100px;
+.white-background .split-container .covid-title {
   font-size: 18px;
 }
 
-.split .white-background .split-container .yes {
+.white-background .split-container .yes {
   padding: 10px 50px;
 }
 
-.split .white-background .split-container .split-bttn {
+.white-background .split-container .split-bttn {
   border: 1px solid chocolate;
   padding: 7px;
   background: chocolate;
@@ -453,37 +422,32 @@
   top: 15px;
 }
 
-.split .white-background .split-container .split-bttn:hover {
+.white-background .split-container .split-bttn:hover {
   background: #be5e1a;
   text-decoration: none;
 }
 
-.split .white-background .split-img {
+.white-background .split-img {
   height: 75vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (max-width: 767px) {
-  .split {
-    height: 145vh;
-  }
-  .split .white-background {
+@media (max-width: 812px) {
+  .white-background {
     height: 140vh;
   }
   .hello {
     position: absolute;
-    top: 21vh;
+    top: 100px;
   }
 }
 
-@media (max-width: 450px) {
-  .split {
-    height: 160vh;
-  }
-  .split .white-background {
-    height: 150vh;
+@media (max-width: 380px) {
+  .hello {
+    position: absolute;
+    top: 80px;
   }
 }
 
@@ -491,6 +455,7 @@
   height: 50vh;
   opacity: 0.9;
   background: url("../Images/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,6 +465,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 70px;
 }
 
 .form-section .email-block {
@@ -525,43 +493,6 @@
 @media (max-width: 450px) {
   .news {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-  .example {
-    height: 25vh;
-  }
-  .landing {
-    height: 120vh;
-  }
-  .shapes {
-    height: 130vh;
-  }
-  .split {
-    position: relative;
-    top: 700px;
-  }
-  .split .split-container {
-    height: 100vh;
-  }
-  .split .split-container .covid-title {
-    margin-top: 50px;
-  }
-  .split .white-background .split-img {
-    height: 100vh;
-  }
-  .form-section {
-    position: relative;
-    top: 925px;
-    height: 60vh;
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 670px) and (orientation: landscape) {
-  .example {
-    height: 30vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

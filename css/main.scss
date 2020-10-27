@@ -5,7 +5,7 @@
 }
 
 
-$ham-breakpoint: 767px;
+$ham-breakpoint: 812px;
 $first-breakpoint: 870px;
 $chocolate-color: chocolate;
 $iphone-breakpoint: 450px;
@@ -22,7 +22,7 @@ $sm-iphone-bp: 380px;
         width: 100%;
         height: 15vh;
         background-image: url('../Images/attachment_118172475.png');
-        background-size: 475px 275px;
+        background-size: 500px 200px;
         background-position: center;
        
         .ham-container {
@@ -149,8 +149,9 @@ $sm-iphone-bp: 380px;
 // Page Nav Menu
 .page-header-container {
     background: #262626;
-    height: 10vh;
+    max-height: 10vh;
     width: 100%;
+    
 }
 
 .logo {
@@ -159,6 +160,7 @@ $sm-iphone-bp: 380px;
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: cover;
 }
 
 .container-wrapper{
@@ -278,19 +280,19 @@ $sm-iphone-bp: 380px;
 
 
 .shapes {
-    height: 80vh;
-    background: url("../Images/dots.png");
     background-size: repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 
     .shapes-container {
-        background: white;
-        height: 75vh;
+        background: rgb(248, 248, 248);
+        width: 100%;
+        
 
         .shop-tittle {
-            margin-top: 25px;
+            margin: 25px 0px 50px 0px;
             text-transform: uppercase;
             font-size: 36px;
          
@@ -303,26 +305,27 @@ $sm-iphone-bp: 380px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70vh;
             margin-top: -25px;
-            display: flex;
+            overflow: hidden;
         
             .circle1 {
                 height: 275px;
                 width: 275px;
+                object-fit: cover;
                 border-radius: 50%;
-
             }
 
             .circle2 {
                 height: 275px;
                 width: 275px;
+                object-fit: cover;
                 border-radius: 50%;
             }
 
             .circle3 {
                 height: 275px;
                 width: 275px;
+                object-fit: cover;
                 border-radius: 50%;
             }
 
@@ -347,114 +350,72 @@ $sm-iphone-bp: 380px;
     .shop-tittle {
         margin-bottom: 75px;
     }
-
-    .shapes {
-        height: 160vh;
-
-        .shapes-container {
-            height: 150vh;
-        }
-    }
 }
 
 @media (max-width: $iphone-breakpoint) {
     .shop-tittle {
         margin-bottom: 75px;
     }
-
-    .shapes {
-        height: 200vh;
-
-        .shapes-container {
-            height: 200vh;
-        }
-    }
 }
 
-@media (max-width: $sm-iphone-bp) {
-    .shapes {
-        height: 200vh;
 
-        .shapes-container {
-            height: 200vh;
-        }
-    }
-}
-
-.split {
-    background: url("../Images/dots.png");
-    height: 80vh;
+.white-background{
+    background: rgb(253, 253, 253);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .white-background{
-        background: white;
-        height: 75vh;
-        width: 100%;
+    .split-container{
         display: flex;
-        justify-content: center;
         align-items: center;
 
-        .split-container{
-            display: flex;
-            align-items: center;
-
-            .covid-title {
-                position: relative;
-                top: -100px;
-                font-size: 18px;
-            }
-
-            .yes {
-                padding: 10px 50px;
-            }
-
-            .split-bttn{ 
-                border: 1px solid $chocolate-color;
-                padding: 7px;
-                background: $chocolate-color;
-                border-radius: 22.5px;
-                color: white;
-                position: relative;
-                top: 15px;
-
-                &:hover {
-                    background: rgb(190, 94, 26);
-                    text-decoration: none;
-                }
-            }
+        .covid-title {
+            font-size: 18px;
         }
 
-        .split-img {
-            height: 75vh;
-            width: 100%;
-            object-fit: cover;
+        .yes {
+            padding: 10px 50px;
         }
+
+        .split-bttn{ 
+            border: 1px solid $chocolate-color;
+            padding: 7px;
+            background: $chocolate-color;
+            border-radius: 22.5px;
+            color: white;
+            position: relative;
+            top: 15px;
+
+            &:hover {
+                background: rgb(190, 94, 26);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .split-img {
+        height: 75vh;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
 @media (max-width: $ham-breakpoint){
-    .split {
-        height: 145vh;
-        
-        .white-background {
-            height: 140vh;
-        }
+    .white-background {
+        height: 140vh;
     }
+
     .hello {
         position: absolute;
-        top: 21vh;
+        top: 100px;
     }
 }
 
-@media (max-width: $iphone-breakpoint) {
-    .split {
-        height: 160vh;
-        
-        .white-background {
-            height: 150vh;
-        }
+@media (max-width: $sm-iphone-bp) {
+    .hello {
+        position: absolute;
+        top: 80px;
     }
 }
 
@@ -467,9 +428,12 @@ $sm-iphone-bp: 380px;
     height: 50vh;
     opacity: 0.9;
     background: url("../Images/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    margin-top: 70px;
 
     .email-block {
         margin: 25px;
@@ -495,51 +459,5 @@ $sm-iphone-bp: 380px;
 @media (max-width: $iphone-breakpoint){
     .news {
         font-size: 12px;
-    }
-}
-
-
-@media (max-width: 767px) and (orientation: landscape){
-    .example {
-        height: 25vh;
-    }
-
-    .landing{
-        height: 120vh;
-    }
-
-    .shapes {
-        height: 130vh;
-    }
-
-    .split {
-        position: relative;
-        top: 700px;
-
-        .split-container {
-            height: 100vh;
-
-            .covid-title{
-                margin-top: 50px;
-            }
-        }
-
-        .white-background .split-img {
-            height: 100vh;
-        }
-    }
-
-    .form-section{
-        position: relative;
-        top: 925px;
-        height: 60vh;
-        margin-top: 25px;
-    }
-}
-
-
-@media (max-width: 670px) and (orientation: landscape){
-    .example {
-        height: 30vh;
     }
 }
